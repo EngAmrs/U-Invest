@@ -1,0 +1,294 @@
+*{
+
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hot-line{
+
+    background-color: #29752D;
+    width: 100%;
+
+}
+
+.hot-line .content1{
+
+    padding: 3px;
+    text-align: center;
+}
+.hot-line h4, p{
+    display: inline;
+    padding: 2px;
+    color: #ccc;
+}
+
+
+nav{
+    width: 100%;
+    height: 6em;
+    background-color:rgba(41, 117, 45, .025);
+}
+nav #logo{
+    opacity: 90%;
+    float:left;
+    display: inline;
+    height: 100px;
+   
+}
+nav #logo img{
+    width: 100%;
+    height: 100%;
+}
+
+nav ul{
+    float: right;
+    opacity: 98%;
+    padding: 20px 0;
+    
+}
+nav ul li{
+
+    list-style: none;
+    display: inline;
+    margin: 0 2em;
+
+}
+
+nav .fa-solid{
+
+    float: right;
+    font-size: 30px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+}
+nav ul li a:hover{
+
+    color: #29752D;
+ 
+ }
+
+ nav ul li:nth-last-child(1), li:nth-last-child(2){
+
+    margin: 2em .8em;
+
+ }
+nav ul li:nth-last-child(1) a, li:nth-last-child(2) a{
+    padding: .7em 1.5em;
+    text-align: center;
+    color: #fff;
+    background-color: #29752D;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    border: 1px  solid #000;
+}
+
+nav ul li:nth-last-child(2) a{
+    background-color: rgba(41, 117, 45, 0);
+    color: #000;
+}
+
+nav ul li:nth-last-child(1) a:hover, li:nth-last-child(2) a:hover{
+
+    color: #000;
+    background-color: rgba(41, 117, 45, 0);
+    border: 1px  solid #000;
+ 
+ }
+ nav ul li:nth-last-child(2) a:hover{
+    background-color: rgba(41, 117, 45, 1);
+    color: #fff;
+}
+
+
+/*Slide Show*/
+.mySlides{height: 500px;}
+.colored{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(41, 117, 50, .2);
+    position: absolute;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    position: absolute;
+    top: 30%;
+    left: 100px;
+    display: none;
+    
+  }
+ 
+  
+  .text h1 {
+    text-align: left;
+    text-transform: uppercase;
+    color:#fff
+  }
+  
+  .text p {
+    text-indent: 50px;
+    line-height: 2em;
+    color :#ccc;
+    letter-spacing: 3px;
+  }
+ 
+  
+img {vertical-align: middle; height: 100%;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+ /*Media Query*/
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    nav ul{
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        margin-top: 100px;
+        background-color: rgba(255, 255, 255, 1);
+        z-index: 999;
+    
+    }
+    
+    nav ul li{
+        text-align: center ;
+        display: block;
+    }
+    nav ul li:nth-last-child(1n+3){
+        padding-bottom: 40px;
+    }
+    
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+
+    nav ul{
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        margin-top: 100px;
+        background-color: rgba(255, 255, 255, 1);
+        z-index: 999;
+    
+    }
+    
+    nav ul li{
+        padding: 0 0 10px 0;
+        text-align: center ;
+        display: block;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+ 
+    nav ul{
+        display: none;
+        position: absolute;
+        margin-top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 1);
+        z-index: 999;
+        
+    
+    }
+    nav ul li{
+        padding: 0 0 10px 0;
+        display: block;
+        text-align: center;
+    }
+
+  
+   
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+    nav ul{
+        display: block !important;
+        position: relative;
+        margin: 1rem;
+        width: auto;
+        float: right;
+        opacity: 90%;
+        padding: 20px 0;
+        background-color: transparent;
+    }
+
+    nav ul li{
+        display: inline;
+    }
+
+    .fa-solid{
+
+        display: none;
+    }
+    .text{display: block;}
+
+}
+
