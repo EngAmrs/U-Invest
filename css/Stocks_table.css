@@ -1,0 +1,106 @@
+table {
+	--accent-color: rgba(41, 117, 45, .6);
+	--text-color: slategray;
+	--bgColorDarker: #ececec;
+	--bgColorLighter: #fcfcfc;
+	--insideBorderColor: lightgray;
+	width: 70%;
+	padding: 0;
+	border: 1px solid var(--accent-color);
+	border-collapse: collapse;
+	color: var(--text-color);
+	table-layout: fixed;
+}
+
+table caption {
+	margin: 3rem 0;
+	color: slategray;
+	font-size: 1.5rem;
+	font-weight: 600;
+	letter-spacing: 0.055rem;
+	text-align: center;
+}
+
+table thead tr {
+	color: whitesmoke;
+	background-color: var(--accent-color);
+	font-size: 1rem;
+}
+
+table tbody tr {
+	border: 1px solid var(--insideBorderColor);
+	background-color: var(--bgColorDarker);
+}
+
+table tbody tr:nth-child(odd) {
+	background-color: var(--bgColorLighter);
+}
+
+table th {
+	letter-spacing: 0.075rem;
+}
+
+table th,
+table td {
+    border: 1px solid #9999;
+	padding: 0.75rem 1rem;
+	font-weight: normal;
+	text-align: center;
+}
+
+table th:nth-child(1),
+table td:nth-child(1) {
+	text-align: left;
+}
+
+@media screen and (max-width: 992px) {
+	table {
+		border: none;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+	}
+
+	table caption {
+		padding: 0.75rem 1rem;
+		border-radius: 6px 6px 0 0;
+		color: whitesmoke;
+		font-size: 1.35rem;
+		background-color: var(--accent-color);
+	}
+
+	table thead {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+	}
+
+	table tbody tr {
+		margin-bottom: 2rem;
+		display: block;
+	}
+
+	table td {
+		font-size: 0.875rem;
+		text-align: right;
+		display: block;
+	}
+    table th:nth-child(1),
+    table td:nth-child(1) {
+        text-align: right;
+    }
+	table td:before {
+		content: attr(data-label);
+		font-size: 0.75rem;
+		font-weight: 600;
+		letter-spacing: 0.075rem;
+		text-transform: uppercase;
+		float: left;
+		opacity: 0.5;
+	}
+
+	table td:not(:last-child) {
+		border-bottom: 1px solid var(--insideBorderColor);
+	}
+}

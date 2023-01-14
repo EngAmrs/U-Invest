@@ -19,19 +19,13 @@ body {
     padding: 3px;
     text-align: center;
 }
-.hot-line h4, p{
+.hot-line h4{
+    font-style: italic;
     display: inline;
     padding: 2px;
     color: #ccc;
 }
 
-.hot-line p{
-    display: inline;
-    font-style: italic;
-    font-size: .9em;
-    padding: 2px;
-    color: #ccc;
-}
 
 nav{
     width: 100%;
@@ -56,6 +50,14 @@ nav ul{
     padding: 20px 0;
     
 }
+
+nav .active{
+    font-weight: bold;
+    color: #29752D;
+    padding-bottom: .5em;
+    border-bottom: 2px solid #29752D;
+}
+
 nav ul li{
 
     list-style: none;
@@ -540,7 +542,6 @@ iframe{
 
 footer{
     font: bold 14px sans-serif;
-
 }
 
 footer .footer-left,
