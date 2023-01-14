@@ -12,7 +12,6 @@ body {
 
     background-color: #29752D;
     width: 100%;
-
 }
 
 .hot-line .content1{
@@ -186,11 +185,19 @@ img {vertical-align: middle; height: 100%;}
 }
 
 
-
 /*Hot Stocks*/
 #Hot-stocks{
     position: relative;
 }
+#Hot-stocks .exit_frame{
+    display: none; 
+    position: absolute; 
+    left: 50%;
+    top: 0;
+    cursor: pointer;
+    color: gray;
+    }
+
 #Hot-stocks .container{
     width: 85%;
     display: table;
@@ -202,6 +209,7 @@ img {vertical-align: middle; height: 100%;}
     color: grey;
     font-style: italic;
 }
+
 #Hot-stocks .cards{
     width: 300px;
     height: 300px;
@@ -399,7 +407,12 @@ footer .copyright p span{
     color: rgba(41, 117, 45, 1);
     font-weight: bolder;
 }
-
+iframe{
+    height: 600px;
+    width: 100%;
+    border: 0;
+    display: none;
+}
 
 
  /*Media Query*/
@@ -432,6 +445,7 @@ footer .copyright p span{
     
 
 }
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {

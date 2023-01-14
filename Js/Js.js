@@ -27,3 +27,45 @@ function slideShow(n){
     slides[slideIndex-1].style.display = "block";
 
 }
+
+
+
+//Stocks page
+
+const stocks_cards = document.getElementById("Hot-stocks").getElementsByClassName("container")[0];
+const iframe_stock = document.getElementById("Hot-stocks").getElementsByTagName("iframe")[0];
+const exit_frame = document.getElementsByClassName("exit_frame")[0];
+
+const cards1 = function (event){
+  getcords = event.target.closest('.cards').getAttribute("value")
+  //Going in stock iframe
+    if(getcords === "card-1"){
+    iframe_stock.setAttribute("src", "../Stocks frames/Stocks - 1.html");
+    } else if (getcords === "card-2"){
+      iframe_stock.setAttribute("src", "../Stocks frames/Stocks - 2.html");
+    }
+    else if (getcords === "card-3"){
+      iframe_stock.setAttribute("src", "../Stocks frames/Stocks - 4.html");
+    }
+    else if (getcords === "card-4"){
+      iframe_stock.setAttribute("src", "../Stocks frames/Stocks - 3.html");
+    }
+
+    iframe_stock.style.display = "block";
+    document.getElementById("Hot-stocks").getElementsByClassName("container")[0].style.display = "none";
+    exit_frame.style.display = "block";
+
+    //Exit Func
+    const exit_fr = function (){
+      document.getElementById("Hot-stocks").getElementsByClassName("container")[0].style.display = "";
+      exit_frame.style.display = "none";
+      iframe_stock.removeAttribute("src");
+      iframe_stock.style.display = "none";
+
+  }
+
+  exit_frame.addEventListener("click", exit_fr);
+
+}
+
+stocks_cards.addEventListener("click", cards1)

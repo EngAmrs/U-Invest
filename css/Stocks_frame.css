@@ -1,0 +1,56 @@
+#stocksPage-1{
+    width: 95%;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    height: 580px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+#stocksPage-1 h1{
+    
+    color: grey;
+    font-style: italic;
+}
+
+#stocksPage-1 img{
+    float: left;
+    margin: 50px 20px;
+    width: 20%;
+    
+    
+    
+
+}
+#stocksPage-1 .container {
+    position: absolute;
+    top: 30%;
+}
+#stocksPage-1 .article{
+    margin: 30px;
+    padding: 3em;
+    display: inline-block;
+    background-color:rgba(41, 117, 45, .020);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 991px) {
+    #stocksPage-1 .container {
+    top: 15%;
+}
+    #stocksPage-1 img{
+        width: 30%;
+        float:inherit;
+        margin: 0 20px;
+    }
+    #stocksPage-1 img, .article{
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        
+    }
+
+}   
