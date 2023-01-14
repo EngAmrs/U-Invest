@@ -1,0 +1,90 @@
+
+.Login-form-wrapper {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+  }
+  .Login-form-wrapper .title {
+    margin-bottom: 30px;
+  }
+  .Login-form-wrapper h1 {
+    margin-top: 50px;
+    font-size: 1.7em;
+    font-weight: bold;
+  }
+  .Login-form-wrapper h1 span {
+    font-weight: bolder;
+    color: rgba(41, 117, 45, 1);
+  } 
+  .Login-form-wrapper p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  #Login-form input:not([type="submit"]) {
+    margin: 1em 0;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    height: 40px;
+    width: 60%;
+    font-size: .8em;
+    font-style: italic;
+    color: #999;
+  }
+
+  #Login-form #submit{
+    margin: 0 auto;
+    width: 70%;
+  }
+  #Login-form input[type="submit"] {
+    cursor: pointer;
+    width: 40%;
+    height: 50px;
+    background: #fff;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+  }
+
+  #Login-form input[type="submit"]:hover{
+
+    background-color: rgba(41, 117, 45, .9);
+    color: #fff
+  }
+
+  
+  #Login-form input:not([type="submit"]):focus{
+    border: .5px solid #ccc;
+    border-bottom: 5px solid #29752D;
+       
+  }
+
+  #Login-form a{
+    display: block;
+    margin: 1em 0;
+    color: gray;
+  }
+
+  @media only screen and (max-width: 991px) {
+
+    #Login-form input:not([type="submit"]){
+        width: 100%;
+    }
+    #Login-form #submit{
+        margin: 0 auto;
+        width: 50%;
+      }
+    #Login-form input[type="submit"] {
+        cursor: pointer;
+        width: 90%;
+        height: 50px;
+    }
+
+  }
