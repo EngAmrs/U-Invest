@@ -1,3 +1,7 @@
+*{
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
 #stocksPage-1{
     width: 95%;
     display: table;
@@ -11,7 +15,12 @@
 #stocksPage-1 h1{
     
     color: grey;
+}
+#stocksPage-1 p{
     font-style: italic;
+    font-size: 1..5em;
+    color:dimgray;
+
 }
 
 #stocksPage-1 img{
@@ -31,7 +40,7 @@
     margin: 1.5em;
     padding: 3em;
     display: inline-block;
-    background-color:rgba(41, 117, 45, .020);
+    background-color:#F1E3D9;
     border-radius: 1em;
     overflow: hidden;
 }

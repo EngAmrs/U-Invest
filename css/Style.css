@@ -1,5 +1,5 @@
 *{
-
+    font-family: 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
 }
 body {
@@ -8,6 +8,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
+/*Hotline and navbar*/
 .hot-line{
 
     background-color: #29752D;
