@@ -79,10 +79,10 @@ const cards1 = function (event){
       iframe_stock.setAttribute("src", "Stocks frames/Stocks2.html");
     }
     else if (getcords === "card-3"){
-      iframe_stock.setAttribute("src", "Stocks frames/Stocks3.html");
+      iframe_stock.setAttribute("src", "Stocks frames/Stocks4.html");
     }
     else if (getcords === "card-4"){
-      iframe_stock.setAttribute("src", "Stocks frames/Stocks4.html");
+      iframe_stock.setAttribute("src", "Stocks frames/Stocks3.html");
     }
 
     iframe_stock.style.display = "block";
