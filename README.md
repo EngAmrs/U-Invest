@@ -1,2 +1,2 @@
 # U-Invest
-Html/Css landing page
+Html, Css & pure javascript landing page
