@@ -1,4 +1,23 @@
 
+
+//Loading page
+
+const loading = document.getElementById("loading-page");
+loading.style.opacity = 1
+setTimeout(()=>{
+   setInterval(() =>{
+
+        loading.style.opacity -= 0.01
+
+        if(loading.style.opacity == 0.02){
+        loading.style.display = "none";
+        document.getElementsByTagName("body")[0].style.overflow = "inherit";
+        clearInterval();
+}
+    },10)
+}, 1000)
+
+
 //Navbar toggle
 
 document.getElementsByTagName('ul')[0].style.display="none";
