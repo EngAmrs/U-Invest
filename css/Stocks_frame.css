@@ -18,7 +18,7 @@
 }
 #stocksPage-1 p{
     font-style: italic;
-    font-size: 1..5em;
+    font-size: 1..1em;
     color:dimgray;
 
 }
@@ -27,6 +27,10 @@
     float: left;
     margin: 2em 1.1em;
     width: 20%;
+    
+    
+    
+
 }
 #stocksPage-1 .container {
     position: absolute;

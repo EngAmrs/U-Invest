@@ -5,14 +5,14 @@
 const loading = document.getElementById("loading-page");
 loading.style.opacity = 1
 setTimeout(()=>{
-   setInterval(() =>{
+   let x = setInterval(() =>{
 
         loading.style.opacity -= 0.01
 
         if(loading.style.opacity == 0.02){
         loading.style.display = "none";
         document.getElementsByTagName("body")[0].style.overflow = "inherit";
-        clearInterval();
+        clearInterval(x);
 }
     },10)
 }, 1000)
@@ -74,15 +74,15 @@ const cards1 = function (event){
 
   //Going in stock iframe
     if(getcords === "card-1"){
-    iframe_stock.setAttribute("src", "../Stocks frames/Stocks - 1.html");
+    iframe_stock.setAttribute("src", "Stocks frames/Stocks1.html");
     } else if (getcords === "card-2"){
-      iframe_stock.setAttribute("src", "../Stocks frames/Stocks - 2.html");
+      iframe_stock.setAttribute("src", "Stocks frames/Stocks2.html");
     }
     else if (getcords === "card-3"){
-      iframe_stock.setAttribute("src", "../Stocks frames/Stocks - 4.html");
+      iframe_stock.setAttribute("src", "Stocks frames/Stocks3.html");
     }
     else if (getcords === "card-4"){
-      iframe_stock.setAttribute("src", "../Stocks frames/Stocks - 3.html");
+      iframe_stock.setAttribute("src", "Stocks frames/Stocks4.html");
     }
 
     iframe_stock.style.display = "block";
