@@ -16,7 +16,7 @@ body {
 
 .hot-line .content1{
 
-    padding: 3px;
+    padding: 0.1em;
     text-align: center;
 }
 .hot-line h4{
@@ -47,7 +47,7 @@ nav #logo img{
 nav ul{
     float: right;
     opacity: 98%;
-    padding: 20px 0;
+    padding: 3em 0;
     
 }
 
@@ -69,8 +69,8 @@ nav ul li{
 nav .fa-solid{
 
     float: right;
-    font-size: 30px;
-    margin: 30px;
+    font-size: 2em;
+    margin: .7em;
     cursor: pointer;
 }
 
@@ -95,11 +95,11 @@ nav ul li:nth-last-child(1) a, li:nth-last-child(2) a{
     text-align: center;
     color: #fff;
     background-color: #29752D;
-    border-radius: 100px;
+    border-radius: 2em;
     font-weight: bold;
     font-size: 1em;
     cursor: pointer;
-    border: 1px  solid #000;
+    border: 1px  solid #9999;
 }
 
 nav ul li:nth-last-child(2) a{
@@ -111,7 +111,7 @@ nav ul li:nth-last-child(1) a:hover, li:nth-last-child(2) a:hover{
 
     color: #000;
     background-color: rgba(41, 117, 45, 0);
-    border: 1px  solid #000;
+    border: 1px  solid #999;
  
  }
  nav ul li:nth-last-child(2) a:hover{
@@ -121,66 +121,67 @@ nav ul li:nth-last-child(1) a:hover, li:nth-last-child(2) a:hover{
 
 
 /*Slide Show*/
-.mySlides{height: 500px;}
-.colored{
+#Slide .mySlides{height: 30em;}
+#Slide .colored{
+    border-radius: 1em;
     width: 100%;
     height: 100%;
     background-color:rgba(41, 117, 50, .3);
     position: absolute;
 }
-.prev, .next {
+#Slide .prev, #Slide .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 16px;
+    padding: 1em;
     margin-top: -22px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
-    border-radius: 0 3px 3px 0;
+    font-size: 1em;
+    border-radius: 0 1em 1em 0;
     user-select: none;
   }
   
 
-  .next {
+  #Slide .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 1em 0 0 1em;
   }
   
-  .prev:hover, .next:hover {
+  #Slide .prev:hover,  #Slide .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
   
-  .text {
+ #Slide .text {
     color: #f2f2f2;
-    font-size: 15px;
+    font-size: 0.9em;
     position: absolute;
     top: 30%;
-    left: 100px;
+    left: 6em;
     display: none;
     
   }
  
   
-  .text h1 {
+ #Slide .text h1 {
     text-align: left;
     text-transform: uppercase;
     color:#fff
   }
   
-  .text p {
-    text-indent: 50px;
+ #Slide .text p {
+   
     line-height: 2em;
     color :#ccc;
-    letter-spacing: 3px;
+    letter-spacing: 0.2em;
   }
  
   
-img {vertical-align: middle; height: 100%;}
+#Slide img {vertical-align: middle; height: 100%; border-radius: 1em;}
 
 /* Slideshow container */
-.slideshow-container {
+#Slide .slideshow-container {
   max-width: 97%;
   position: relative;
   margin: auto;
@@ -213,14 +214,14 @@ img {vertical-align: middle; height: 100%;}
 }
 
 #Hot-stocks .cards{
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
+    width: 18.9em;
+    height: 18.9em;
+    border-radius: 1.5em;
     border: 1px solid #ccc;
     background-color:rgba(41, 117, 45, .02);
     text-align: center;
     display: inline-block;
-    margin: 20px 20px 0 0;
+    margin: 1em 1em 0 0;
     
 
 }
@@ -229,8 +230,8 @@ img {vertical-align: middle; height: 100%;}
 
     background-color:rgba(41, 117, 45, .05);
     height: 48%;
-    margin: 0 10px;
-    border-radius: 20px;
+    margin: 0 .5em;
+    border-radius: 1em;
     overflow: hidden;
 }
 #Hot-stocks .cards .article p{
@@ -248,7 +249,7 @@ img {vertical-align: middle; height: 100%;}
 #Hot-stocks .cards img{
     width: 60%;
     height: 35%;
-    margin: 20px 0 20px 0;
+    margin: 1.2em 0 1.1em 0;
 
 }
 
@@ -258,9 +259,9 @@ footer{
 	background-color: #292c2f;
 	width: 100%;
 	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 55px 50px;
-	margin-top: 80px;
+	font: bold 1em sans-serif;
+	padding: 4em 3em;
+	margin-top: 3em;
 }
  
 footer .footer-left,
@@ -276,7 +277,7 @@ footer .footer-left{
  
 footer h3{
 	color:  rgba(41, 117, 45, 1);
-	font: normal 36px 'Cookie', cursive;
+	font: normal 2em 'Cookie', cursive;
     font-weight: bold;
 	margin: 0;
 }
@@ -288,13 +289,13 @@ footer h3 span{
  
 footer .footer-links{
 	color:  #ffffff;
-	margin: 20px 0 12px;
+	margin: 1em 0 1em;
 	padding: 0;
 }
  
 footer .footer-links a{
 	display:inline-block;
-    margin: 30px 0 0 10px;
+    margin: 1em 0 0 .5em;
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
@@ -320,19 +321,19 @@ footer .footer-center{
 footer .footer-center i{
 	background-color:  #33383b;
 	color: #ffffff;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
+	font-size: 1.2em;
+	width: 2em;
+	height: 2em;
 	border-radius: 50%;
 	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
+	line-height: 2em;
+	margin: .7em .5em;
 	vertical-align: middle;
 }
  
 footer .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
+	font-size: 1.2em;
+	line-height: 2em;
 }
  
 footer .footer-center p{
@@ -345,7 +346,7 @@ footer .footer-center p{
 footer .footer-center p span{
 	display:block;
 	font-weight: normal;
-	font-size:14px;
+	font-size:1em;
 	line-height:2;
 }
  
@@ -361,7 +362,7 @@ footer .footer-right{
 footer .footer-company-about{
 	line-height: 20px;
 	color:  #92999f;
-	font-size: 13px;
+	font-size: 1em;
 	font-weight: normal;
 	margin: 0;
 }
@@ -369,28 +370,27 @@ footer .footer-company-about{
 footer .footer-company-about span{
 	display: block;
 	color:  #ffffff;
-	font-size: 14px;
+	font-size: 1em;
 	font-weight: bold;
-	margin-bottom: 20px;
+	margin-bottom: 1.5em;
 }
  
 footer .footer-icons{
-	margin-top: 25px;
+	margin-top: 1.8em;
 }
  
 footer .footer-icons a{
 	display: inline-block;
-	width: 35px;
-	height: 35px;
+	width: 2em;
+	height: 2em;
 	cursor: pointer;
 	background-color:  #33383b;
 	border-radius: 2px;
  
-	font-size: 20px;
+	font-size: 1em;
 	color: #ffffff;
 	text-align: center;
-	line-height: 35px;
- 
+	line-height: 2em;
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
@@ -411,7 +411,7 @@ footer .copyright p span{
     font-weight: bolder;
 }
 iframe{
-    height: 600px;
+    height: 38em;
     width: 100%;
     border: 0;
     display: none;
@@ -427,7 +427,7 @@ iframe{
         position: absolute;
         left: 0;
         width: 100%;
-        margin-top: 100px;
+        margin-top: 6em;
         background-color: rgba(255, 255, 255, 1);
         z-index: 999;
     
@@ -437,9 +437,7 @@ iframe{
         text-align: center ;
         display: block;
     }
-    nav ul li:nth-last-child(1n+3){
-        padding-bottom: 40px;
-    }
+    
 
     /*Hot Stocks*/
     #Hot-stocks .container{
@@ -459,7 +457,7 @@ iframe{
         position: absolute;
         left: 0;
         width: 100%;
-        margin-top: 100px;
+        margin-top: 6em;
         background-color: rgba(255, 255, 255, 1);
         z-index: 999;
     
@@ -484,7 +482,7 @@ iframe{
     nav ul{
         display: none;
         position: absolute;
-        margin-top: 100px;
+        margin-top: 6em;
         left: 0;
         width: 100%;
         background-color: rgba(255, 255, 255, 1);
@@ -518,7 +516,7 @@ iframe{
         width: auto;
         float: right;
         opacity: 90%;
-        padding: 20px 0;
+        padding: 1.5em 0;
         background-color: transparent;
     }
 
@@ -526,11 +524,10 @@ iframe{
         display: inline;
     }
 
-    .fa-solid{
-
+    nav .fa-solid{
         display: none;
     }
-    .text{display: block;}
+    #Slide .text{display: block;}
 
     #Hot-stocks .container{
         width: 85%;
@@ -540,6 +537,9 @@ iframe{
 }
 
 @media only screen and (max-width: 991px) {
+nav ul li:nth-last-child(1n+3){
+        padding-bottom: 3em;
+}
 
 footer{
     font: bold 14px sans-serif;
@@ -550,7 +550,7 @@ footer .footer-center,
 footer .footer-right{
     display: block;
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 2em;
     text-align: center;
 }
 
@@ -562,4 +562,5 @@ footer .footer-center i{
 #Hot-stocks .container{
     width: 0;
 }
+
 }

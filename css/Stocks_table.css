@@ -36,9 +36,7 @@ table tbody tr:nth-child(odd) {
 	background-color: var(--bgColorLighter);
 }
 
-table th {
-	letter-spacing: 0.075rem;
-}
+
 
 table th,
 table td {
@@ -46,6 +44,11 @@ table td {
 	padding: 0.75rem 1rem;
 	font-weight: normal;
 	text-align: center;
+}
+
+table th {
+	letter-spacing: 0.075rem;
+	font-weight: bolder;
 }
 
 table th:nth-child(1),

@@ -1,6 +1,9 @@
+
+//Navbar toggle
+
 document.getElementsByTagName('ul')[0].style.display="none";
 
-function toggle(){
+const navT = function navToggle(){
     
     if(document.getElementsByTagName('ul')[0].style.display == 'none')
         document.getElementsByTagName('ul')[0].style.display="block";
@@ -9,7 +12,13 @@ function toggle(){
 
 }
 
+const fa_bars = document.getElementsByTagName("nav")[0].getElementsByClassName("fa-solid")[0]
+fa_bars.addEventListener('click', navT);
+
+
+//SlideShow
 let slideIndex = 1;
+
 slideShow(slideIndex);
 
 function plusSlides(n) {
@@ -28,16 +37,22 @@ function slideShow(n){
 
 }
 
+setInterval(function(){
+  
+  slideShow(slideIndex += 1);
+  
+  },5000)
+
 
 
 //Stocks page
-
 const stocks_cards = document.getElementById("Hot-stocks").getElementsByClassName("container")[0];
 const iframe_stock = document.getElementById("Hot-stocks").getElementsByTagName("iframe")[0];
 const exit_frame = document.getElementsByClassName("exit_frame")[0];
 
 const cards1 = function (event){
   getcords = event.target.closest('.cards').getAttribute("value")
+
   //Going in stock iframe
     if(getcords === "card-1"){
     iframe_stock.setAttribute("src", "../Stocks frames/Stocks - 1.html");
@@ -55,7 +70,7 @@ const cards1 = function (event){
     document.getElementById("Hot-stocks").getElementsByClassName("container")[0].style.display = "none";
     exit_frame.style.display = "block";
 
-    //Exit Func
+    //Exit even
     const exit_fr = function (){
       document.getElementById("Hot-stocks").getElementsByClassName("container")[0].style.display = "";
       exit_frame.style.display = "none";

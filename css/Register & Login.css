@@ -7,10 +7,10 @@
     
   }
   .Login-form-wrapper .title {
-    margin-bottom: 30px;
+    margin-bottom: 1.5em;
   }
   .Login-form-wrapper h1 {
-    margin-top: 50px;
+    margin-top: 2em;
     font-size: 1.7em;
     font-weight: bold;
   }
@@ -19,7 +19,7 @@
     color: rgba(41, 117, 45, 1);
   } 
   .Login-form-wrapper p {
-    font-size: 14px;
+    font-size: .9em;
     color: #777;
   }
   
@@ -28,8 +28,8 @@
     border: 1px solid #ccc;
     outline: none;
     border-radius: 5px;
-    padding: 10px;
-    height: 40px;
+    padding: 0.7em;
+    height: 1.5;
     width: 60%;
     font-size: .8em;
     font-style: italic;
@@ -37,20 +37,20 @@
   }
 
   #Login-form #submit{
-    margin: 0 auto;
-    width: 70%;
+    margin: 3em auto;
+    width: 60%;
   }
   #Login-form input[type="submit"] {
     cursor: pointer;
-    width: 40%;
-    height: 50px;
+    width: 35%;
+    height: 3.5em;
     background: #fff;
     color: #000;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: bolder;
     letter-spacing: 1px;
     border: 2px solid #ccc;
-    border-radius: 50px;
+    border-radius: 2em;
   }
 
   #Login-form input[type="submit"]:hover{
@@ -78,13 +78,12 @@
         width: 100%;
     }
     #Login-form #submit{
-        margin: 0 auto;
+        margin: 3em auto;
         width: 50%;
       }
     #Login-form input[type="submit"] {
         cursor: pointer;
         width: 90%;
-        height: 50px;
     }
   }
 
@@ -100,12 +99,12 @@
     
   }
   #Register .container{
-    margin-top: 50px;
+    margin-top: 2em;
     padding: 3em 1em 2em 2em ;
     width: 80%;
     border: 1px solid #ccc;
-    box-shadow: 10px 10px 8px #888888;
-    border-radius: 50px;
+    box-shadow: 0.7em 0.7em 0.5em #888888;
+    border-radius: 2em;
   }
 
   #Register .container h1{
@@ -120,8 +119,8 @@
 
   #Register input[type=text], #Register input[type=password] {
   width: 90%;
-  padding: 15px;
-  margin: 15px 0 30px 0;
+  padding: 1.1em;
+  margin: 1.1em 0 2em 0;
   display: block;
   border: none;
   background: #fff;
@@ -130,9 +129,10 @@
 }
 
 #Register select {
+  outline: none;
   width: 18%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+  padding: 1.1em;
+  margin: .5em 0 2em 0;
   display: inline-block;
   border: none;
   background: rgba(41, 117, 45, .05);
@@ -140,8 +140,8 @@
 
 #Register input[type=phone] {
   width: 72%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+  padding: 1.1em;
+  margin: .5em 0 2em 0;
   display: inline-block;
   border: none;
   background: #fff;
@@ -162,7 +162,7 @@
     
 }
 #Register .gender #female{
-    margin-left: 50px;
+    margin-left: 2em;
 }
 /* Set a style for all buttons */
 #Register button {
@@ -171,7 +171,7 @@
     margin-right: auto;
     background-color: rgba(41, 117, 45, .7);
     color: white;
-    padding: 14px 20px;
+    padding: 1em 1.2em;
     border: none;
     cursor: pointer;
     width: 50%;
