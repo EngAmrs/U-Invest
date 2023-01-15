@@ -1,4 +1,6 @@
-
+body{
+  overflow:inherit;
+}
 .contact-form-wrapper {
     display: table;
     margin-left: auto;

@@ -1,3 +1,7 @@
+body{
+	overflow:inherit;
+}
+
 table {
 	--accent-color: rgba(41, 117, 45, .75);
 	--text-color: slategray;
